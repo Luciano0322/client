@@ -61,12 +61,16 @@ const MutiOpt = ({
                 if(countArr.length > 3) {
                     localStorage.setItem('operatorResult', JSON.stringify(countArr))
                     history.push('/operatorResult')
+                } else {
+                    localStorage.setItem('workerResult', JSON.stringify(countArr))
+                    history.push('/workerResult')
                 }
             }
         } else {
             alert('請選擇選項')
         }
     };
+
     return (
         <Box
             display="flex"

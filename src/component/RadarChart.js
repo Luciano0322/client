@@ -17,15 +17,15 @@ const options = {
     },
 };
 
-const RadarChart = () => {
+const RadarChart = ({arrData}) => {
     const data = {
         labels: ['數位化', '會員', '營運', '市場', '行銷'],
         datasets: [
             {
                 label: '# 積分',
-                data: [20, 40, 60, 80, 100],
+                data: arrData,
                 backgroundColor: 'rgba(255, 99, 132, .8)',
-                borderColor: 'rgba(255, 99, 132, .5)',
+                borderColor: 'rgba(255, 99, 132, .2)',
                 borderWidth: 2,
             },
         ],
@@ -37,6 +37,10 @@ const RadarChart = () => {
             display="flex"
             justifyContent="center"
             alignItems="center"
+            style={{
+                minWidth: 345,
+
+            }}
         >
             <Radar
                 data={data}

@@ -44,7 +44,6 @@ const EntPoint = () => {
     const [identity, setIdentity] = useState('');
 
     const optChange = e => {
-        console.log(e.target);
         setIdentity(e.target.value);
     };
     

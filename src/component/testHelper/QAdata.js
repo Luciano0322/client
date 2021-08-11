@@ -369,3 +369,81 @@ export const operatorSet = [
         ]
     },
 ];
+
+export const workerSet = [
+    {
+        id: 1,
+        muti: false,
+        title: "老點/熟客數量",
+        options: [
+            {
+                id: 1,
+                name: '1~10 位',
+                value: 1,
+                checked: false
+            },
+            {
+                id: 2,
+                name: '10~20 位',
+                value: 2,
+                checked: false
+            },
+            {
+                id: 3,
+                name: '20 位以上',
+                value: 3,
+                checked: false
+            },
+        ]
+    },
+    {
+        id: 2,
+        muti: false,
+        title: "擅長服務項目",
+        options: [
+            {
+                id: 1,
+                name: '1~5 項',
+                value: 1,
+                checked: false
+            },
+            {
+                id: 2,
+                name: '5~10 項',
+                value: 2,
+                checked: false
+            },
+            {
+                id: 3,
+                name: '10 項以上',
+                value: 3,
+                checked: false
+            },
+        ]
+    },
+    {
+        id: 3,
+        muti: false,
+        title: "紀錄預約方式",
+        options: [
+            {
+                id: 1,
+                name: '紙本紀錄',
+                value: 0,
+                checked: false
+            },
+            {
+                id: 2,
+                name: '日曆APP紀錄',
+                value: 1,
+                checked: false
+            },
+            {
+                id: 3,
+                name: '線上預約軟體紀錄',
+                value: 2,
+                checked: false
+            },
+        ]
+    },
+]

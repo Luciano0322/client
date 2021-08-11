@@ -65,6 +65,7 @@ const Home = () => {
     const helperUrl = `/testEntPoint`;
     const salellerUrl = `/`;
     const operatorUrl = `/`;
+    
     return (
         <>
             <Box

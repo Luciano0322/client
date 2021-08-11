@@ -3,12 +3,13 @@ import './App.css';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import { AppBar, Box, Button, CssBaseline, IconButton, Toolbar, Typography } from '@material-ui/core';
 import logo from './images/shilipai_logo_p.svg';
-import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Switch, } from 'react-router-dom';
 import Home from './component/home/Home';
 import EntPoint from './component/testHelper/EntPoint';
 import Operator from './component/testHelper/Operator';
 import Worker from './component/testHelper/Worker';
 import OperatorResult from './component/testHelper/OperatorResult';
+import WorkerResult from './component/testHelper/WorkerResult';
 
 const theme = createTheme(
   {
@@ -48,7 +49,10 @@ const App = () => {
           style={{backdropFilter: 'blur(55px)', background: 'linear-gradient(115.95deg, rgba(255, 255, 255, 0.5) 30.03%, rgba(255, 255, 255, 0.3) 96.4%)',}}
           >
           <Toolbar>
-            <IconButton>
+            <IconButton
+              component={Link}
+              to="/"
+            >
               <img src={logo}/>
             </IconButton>
             <div style={{flexGrow: 1}}></div>
@@ -66,6 +70,7 @@ const App = () => {
           <Route exact path='/operator' component={Operator}/>
           <Route exact path='/worker' component={Worker}/>
           <Route exact path='/operatorResult' component={OperatorResult}/>
+          <Route exact path='/workerResult' component={WorkerResult}/>
         </Switch>
       </Router>
     </ThemeProvider>
