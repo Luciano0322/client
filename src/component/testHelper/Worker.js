@@ -16,6 +16,8 @@ const reducer = (state, action) => {
             state[action.arrIndex].options.map(e => e.checked = false);
             state[action.arrIndex].options[action.optsIndex].checked = true;
             return [...state]
+        default:
+            return state;
     }
 }
 

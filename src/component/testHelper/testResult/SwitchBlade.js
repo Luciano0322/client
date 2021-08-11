@@ -1,4 +1,4 @@
-import { Box, Container, Grid, IconButton, makeStyles, Typography } from '@material-ui/core'
+import { Box, Container, Grid, makeStyles, Typography } from '@material-ui/core'
 import React from 'react'
 import RadarChart from '../../RadarChart';
 import bearImg from '../../../images/bear.svg'
@@ -96,11 +96,11 @@ const SwitchBlade = ({type, arrRadar}) => {
                                 </Typography>
                             </Box>
                             <Box my={3} pt={2}>
-                                {type==='eagle' && <img src={eagleImg} />}
-                                {type==='buddha' && <img src={buddhaImg} />}
-                                {type==='bear' && <img src={bearImg} />}
-                                {type==='hores' && <img src={horesImg} />}
-                                {type==='cat' && <img src={catImg} />}
+                                {type==='eagle' && <img src={eagleImg} alt="" />}
+                                {type==='buddha' && <img src={buddhaImg} alt="" />}
+                                {type==='bear' && <img src={bearImg} alt="" />}
+                                {type==='hores' && <img src={horesImg} alt="" />}
+                                {type==='cat' && <img src={catImg} alt="" />}
                             </Box>
                         </Box>
                     </Grid>

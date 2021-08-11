@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
-import { AppBar, Box, Button, CssBaseline, IconButton, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Button, CssBaseline, IconButton, Toolbar } from '@material-ui/core';
 import logo from './images/shilipai_logo_p.svg';
 import { BrowserRouter as Router, Link, Route, Switch, } from 'react-router-dom';
 import Home from './component/home/Home';
@@ -53,7 +53,7 @@ const App = () => {
               component={Link}
               to="/"
             >
-              <img src={logo}/>
+              <img src={logo} alt=""/>
             </IconButton>
             <div style={{flexGrow: 1}}></div>
             <Button

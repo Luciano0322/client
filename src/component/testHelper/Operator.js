@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useState } from 'react'
+import React, { useReducer, useState } from 'react'
 import MutiOpt from './MutiOpt'
 import { operatorSet } from './QAdata'
 

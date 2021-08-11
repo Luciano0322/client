@@ -1,4 +1,4 @@
-import { Box, Container, Grid, IconButton, makeStyles, Typography } from '@material-ui/core'
+import { Box, Container, Grid, makeStyles, Typography } from '@material-ui/core'
 import React from 'react'
 import monkeyImg from '../../../images/monkey.svg'
 import goatImg from '../../../images/goat.svg'
@@ -74,8 +74,8 @@ const WorkBlade = ({type}) => {
                                 </Typography>
                             </Box>
                             <Box my={3} pt={2}>
-                                {type==='monkey' && <img src={monkeyImg} />}
-                                {type==='goat' && <img src={goatImg} />}
+                                {type==='monkey' && <img src={monkeyImg} alt="" />}
+                                {type==='goat' && <img src={goatImg} alt="" />}
                             </Box>
                         </Box>
                     </Grid>
